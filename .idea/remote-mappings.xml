@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@ssh://gukyeong@127.0.0.1:1111/home/gukyeong/anaconda3/envs/pytorch/bin/python3.6">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/home/gukyeong/Dropbox (GhassanGT)/Gukyeong/PhDResearch/Code/ULM_VIP/SimpleNet Package" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>
