@@ -16,7 +16,7 @@ In order to receive  the download link, please fill out this [form](https://docs
 - Tested on Linux 14.04
 - CUDA, CuDNN
 - Anaconda (or virtualenv)
-- PyTorch(www.pytorch.org)
+- PyTorch (www.pytorch.org)
 - Optionally, tensorflow-cpu for tensorboard
 
 
