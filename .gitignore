@@ -1,5 +1,5 @@
-checkpoints
-logs
+checkpoints/*
+logs/*
 __pycache__
 *.pyc
-.idea
+.idea/*

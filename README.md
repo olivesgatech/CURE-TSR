@@ -1,6 +1,6 @@
 # CURE-TSR
 
-The overall goal of this project is to analyze the robustness of data-driven algorithms under diverse challenging conditions where trained models can possibly depolyed. To achieve this goal, we introduced a large-sacle (>2,000,000 images) recognition dataset (CURE-TSR) which is among the most comprehensive dataset with controlled synthetic challenging conditions. Also, this repository contains codes to reproduce the benchmarking result for CNN presented in our NIPS worshp paper. For detailed information, please refer to our paper [CURE-TSR: Challenging Unreal and Real Environments for Traffic Sign Recognition](https://arxiv.org/abs/1712.02463) and [website](https://ghassanalregib.com/cure-tsr)
+The overall goal of this project is to analyze the robustness of data-driven algorithms under diverse challenging conditions where trained models can possibly be depolyed. To achieve this goal, we introduced a large-sacle (>2,000,000 images) recognition dataset (CURE-TSR) which is among the most comprehensive dataset with controlled synthetic challenging conditions. Also, this repository contains codes to reproduce the benchmarking result for CNN presented in our NIPS workshop paper. For detailed information, please refer to our paper [CURE-TSR: Challenging Unreal and Real Environments for Traffic Sign Recognition](https://arxiv.org/abs/1712.02463) and [website](https://ghassanalregib.com/cure-tsr).
 
 ## Dataset
 <p align="center">
@@ -20,7 +20,7 @@ In order to receive  the download link, please fill out this [form](https://docs
 - Optionally, tensorflow-cpu for tensorboard
 
 
-## usage
+## Usage
 
 ```
 usage: train.py [-h] [-j N] [--epochs N] [--start-epoch N] [-b N] [--lr LR]

@@ -1,5 +1,3 @@
-# python train.py --lr 0.001 /media/gukyeong/HardDisk/data/CURE-TSR/bmp/
-# python train.py --resume ./checkpoints/Softmax_RGB_Nonorm -e /media/gukyeong/HardDisk/data/CURE-TSR/bmp/
 import torch
 import torch.nn as nn
 import torch.nn.parallel
