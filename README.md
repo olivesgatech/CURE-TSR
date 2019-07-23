@@ -172,7 +172,10 @@ Test: [10/14]   Time 0.005 (0.037)      Loss 2.2871 (0.9604)    Prec@1 62.109 (7
 ```
 
 ### CURE-TSR Results
-
+We benchmark the performance of algorithms in real-world scenarios and analyze the performance variation with respect to challenging conditions. Below figure shows the accuracy of baseline methods with respect to challenge levels for each challenge type. We show that challenging conditions can decrease the performance of baseline methods significantly, especially if these challenging conditions result in loss or misplacement of spatial information.
+<p align="center">
+<img src="./figs/cure-tsr_levelplot.png">
+</p> 
 
 
 
