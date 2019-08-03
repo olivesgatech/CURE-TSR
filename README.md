@@ -1,5 +1,7 @@
 # CURE-TSR
 
+[OLIVES Lab, Georgia Institute of Technology](https://ghassanalregib.com/)
+
 The overall goal of this project is to analyze the robustness of data-driven algorithms under diverse challenging conditions where trained models can possibly be depolyed. To achieve this goal, we introduced a large-sacle (>2M images) recognition dataset (CURE-TSR) which is among the most comprehensive dataset with controlled synthetic challenging conditions. Also, this repository contains codes to reproduce the benchmarking result for CNN presented in our NIPS workshop paper. For detailed information, please refer to our paper [CURE-TSR: Challenging Unreal and Real Environments for Traffic Sign Recognition](https://arxiv.org/abs/1712.02463).
 
 ### Publications
