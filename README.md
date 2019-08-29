@@ -17,17 +17,22 @@ Year = {2017},
 booktitle = {Neural Information Processing Systems (NeurIPS) Workshop on Machine Learning for Intelligent Transportation Systems},
 
 ```
-   
- [Challenging Environments for Traffic Sign Detection: Reliability Assessment under Inclement Conditions](https://arxiv.org/abs/1902.06857)
+[Traffic Sign Detection Under Challenging Conditions: A Deeper Look into Performance Variations and Spectral Characteristics
+](https://ieeexplore.ieee.org/document/8793235)
 
 ```
-@INPROCEEDINGS{Temel2019,
-author = {D. Temel and T. Alshawi and M.-H. Chen and G. AlRegib},
-booktitle={arXiv:1902.06857},
-title = {Challenging Environments for Traffic Sign Detection: Reliability Assessment under Inclement Conditions},
-year = {2015},
-}
+@ARTICLE{temel2019traffic,
+author={D. Temel and M. Chen and G. AlRegib},
+journal={IEEE Transactions on Intelligent Transportation Systems},
+title={Traffic Sign Detection Under Challenging Conditions: A Deeper Look into Performance Variations and Spectral Characteristics},
+year={2019},
+volume={},
+number={},
+pages={1-11},
+doi={10.1109/TITS.2019.2931429},
+ISSN={1524-9050},}
 ```
+
 
  [Traffic Signs in the Wild: Highlights from the IEEE Video and Image Processing Cup 2017 Student Competition [SP Competitions]
 ](https://arxiv.org/abs/1810.06169)
@@ -44,6 +49,17 @@ number={2},
 pages={154-161},
 doi={10.1109/MSP.2017.2783449},
 ISSN={1053-5888},}
+```
+
+[Challenging Environments for Traffic Sign Detection: Reliability Assessment under Inclement Conditions](https://arxiv.org/abs/1902.06857)
+
+```
+@INPROCEEDINGS{Temel2019,
+author = {D. Temel and T. Alshawi and M.-H. Chen and G. AlRegib},
+booktitle={arXiv:1902.06857},
+title = {Challenging Environments for Traffic Sign Detection: Reliability Assessment under Inclement Conditions},
+year = {2015},
+}
 ```
 
 
