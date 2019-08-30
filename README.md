@@ -18,7 +18,7 @@ booktitle = {Neural Information Processing Systems (NeurIPS) Workshop on Machine
 
 ```
 [Traffic Sign Detection Under Challenging Conditions: A Deeper Look into Performance Variations and Spectral Characteristics
-](https://ieeexplore.ieee.org/document/8793235)
+](https://arxiv.org/abs/1908.11262)
 
 ```
 @ARTICLE{temel2019traffic,
