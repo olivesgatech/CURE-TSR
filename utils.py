@@ -48,7 +48,7 @@ def l2normalize(tensor):
 def make_dataset (traindir):
     img = []
     for fname in sorted(os.listdir(traindir)):
-        target = int(fname[15:17]) - 1
+        target = int(fname[3:5]) - 1
         path = os.path.join(traindir, fname)
         item = (path, target)
         img.append(item)

@@ -52,8 +52,8 @@ def main():
 
     # Data loading code
     # args.data: path to the dataset
-    traindir = os.path.join(args.data, 'RealChallengeFree/train')
-    testdir = os.path.join(args.data, 'RealChallengeFree/Test')
+    traindir = os.path.join(args.data, 'Real_Train/ChallengeFree')
+    testdir = os.path.join(args.data, 'Real_Test/ChallengeFree')
 
     train_dataset = utils.CURETSRDataset(traindir, transforms.Compose([
         transforms.Resize([28, 28]), transforms.ToTensor(), utils.l2normalize, utils.standardization]))
@@ -162,7 +162,7 @@ def train(train_loader, model, criterion, optimizer, epoch):
     for i, (input, target) in enumerate(train_loader):
         data_time.update(time.time() - end)
 
-        target = target.cuda(async=True)
+        target = target.cuda()
         input_var = torch.autograd.Variable(input)
         target_var = torch.autograd.Variable(target)
 
@@ -172,7 +172,7 @@ def train(train_loader, model, criterion, optimizer, epoch):
         # measure accuracy and record loss
         prec1, prec5 = accuracy(output.data, target, topk=(1, 5))
 
-        losses.update(loss.data[0], input.size(0))  # input.size(0): Batch size
+        losses.update(loss.data, input.size(0))  # input.size(0): Batch size
         top1.update(prec1[0], input.size(0))
         top5.update(prec5[0], input.size(0))
 
@@ -209,7 +209,7 @@ def evaluate(test_loader, model, criterion):
 
     end = time.time()
     for i, (input, target) in enumerate(test_loader):
-        target = target.cuda(async=True)
+        target = target.cuda()
         input_var = torch.autograd.Variable(input, volatile=True)
         target_var = torch.autograd.Variable(target, volatile=True)
 
@@ -219,7 +219,7 @@ def evaluate(test_loader, model, criterion):
 
         # measure accuracy and record loss
         prec1, prec5 = accuracy(output.data, target, topk=(1, 5))
-        losses.update(loss.data[0], input.size(0))
+        losses.update(loss.data, input.size(0))
         top1.update(prec1[0], input.size(0))
         top5.update(prec5[0], input.size(0))
 
@@ -286,7 +286,7 @@ def accuracy(output, target, topk=(1,)):
     res = []
 
     for k in topk:
-        correct_k = correct[:k].view(-1).float().sum(0, keepdim=True)
+        correct_k = correct[:k].reshape(-1).float().sum(0, keepdim=True)
         res.append(correct_k.mul_(100.0 / batch_size))
     return res
 
